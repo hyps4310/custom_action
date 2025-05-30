@@ -1,13 +1,13 @@
 name: 'Hello World'
-description: 'Greet someone'
+description: 'Greet someone and record the time'
 inputs:
   who-to-greet:  # id of input
-    description: 'Name'
+    description: 'Who to greet'
     required: true
-    default: 'custom action'
+    default: 'World'
 outputs:
-  greetings:
-    description: 'How we greeted you'
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
   using: 'node20'
   main: 'index.js'
